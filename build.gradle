@@ -53,3 +53,8 @@ hello2.doLast {
 hello2 << {
 	println "Hello Jupiter"
 }
+
+// Accessing task as a property of the build script
+hello.doLast {
+	println "Greetings from the $hello.name task."
+}
