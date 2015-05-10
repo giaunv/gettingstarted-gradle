@@ -11,6 +11,7 @@ task hello_shortcut << {
 }
 
 // Build scripts are code
+// Using Groovy in Gradle's tasks
 task upper << {
 	String someString = "mY_nAmE"
 	println "Original: " + someString
@@ -31,4 +32,24 @@ task intro(dependsOn: hello) << {
 	counter -> task "task$counter" << {
 		println "I'm task number $counter"
 	}
+}
+
+// Access a task via API - adding a dependency
+task0.dependsOn task2,task3
+
+// Access a task via API - adding behaviour
+task hello2 << {
+	println "Hello Earth"
+}
+
+hello2.doFirst {
+	println "Hello Venus"
+}
+
+hello2.doLast {
+	println "Hello Mars"
+}
+
+hello2 << {
+	println "Hello Jupiter"
 }
