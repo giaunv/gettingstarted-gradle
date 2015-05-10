@@ -67,3 +67,14 @@ task myTask {
 task printTaskProperties << {
 	println myTask.myProperty
 }
+
+// Define a default tasks
+defaultTasks "clean", "run"
+
+task clean << {
+	println "Default Cleaning!"
+}
+
+task run << {
+	println "Default Running!"
+}
