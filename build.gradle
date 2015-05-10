@@ -58,3 +58,12 @@ hello2 << {
 hello.doLast {
 	println "Greetings from the $hello.name task."
 }
+
+// Adding extra properties to a task
+task myTask {
+	ext.myProperty = "myValue"
+}
+
+task printTaskProperties << {
+	println myTask.myProperty
+}
