@@ -4,3 +4,8 @@ task hello {
 		println "Hello World"
 	}
 }
+
+// A shortcut task definition
+task hello_shortcut << {
+	println "Hello world!"
+}
