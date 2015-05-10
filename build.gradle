@@ -9,3 +9,14 @@ task hello {
 task hello_shortcut << {
 	println "Hello world!"
 }
+
+// Build scripts are code
+task upper << {
+	String someString = "mY_nAmE"
+	println "Original: " + someString
+	println "Upper case: " + someString.toUpperCase()
+}
+
+task count << {
+	4.times { print "$it"}
+}
