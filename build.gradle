@@ -1,0 +1,6 @@
+// Hello World
+task hello {
+	doLast {
+		println "Hello World"
+	}
+}
