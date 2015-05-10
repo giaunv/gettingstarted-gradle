@@ -1,2 +1,7 @@
-# hello-gradle
-A hello tutorial with Gradle
+# A hello tutorial with Gradle, tutorial by @gradle.org
+
+# Credits
+
+**Tutorial by @gradle.org**
+
+[Build Script Basic](https://gradle.org/docs/current/userguide/tutorial_using_tasks.html)
