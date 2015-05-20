@@ -1,4 +1,4 @@
-# A hello tutorial with Gradle, tutorial by @gradle.org
+# Getting started Gradle, tutorial by @gradle.org
 
 # Credits
 
